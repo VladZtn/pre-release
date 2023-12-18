@@ -46,7 +46,6 @@ function deliveryProduct() {
         <script>
             setTimeout(function() { window.location.href = "../../../index.php"; }, 8000);
         </script>';
-        
 
     } else {
         echo "Incomplete delivery information provided.";
