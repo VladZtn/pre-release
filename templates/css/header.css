@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000b4e;
+    z-index: 1;
+}
+
+header > a {
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+header > a:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    width: 97%;
+    color: #fff;
+    border-radius: 8px;
+}
+
+header > nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+header > nav > ul > li {
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+header > nav > ul > li > a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header > nav > ul > li:hover {
+    font-weight: 600;
+    transform: scale(1.15);
+}
+
+header > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+#signIn {
+    width: 100px;
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#signIn > a {
+    color: black;
+    text-decoration: none;
+}
+
+header > form > button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transition: all .5s ease;
+}
+
+header > form > button:hover {
+    transform: scale(1.1);
+}
+
+header > form > button > img {
+    width: 45px;
+    height: 45px;
+}

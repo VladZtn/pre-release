@@ -1,0 +1,37 @@
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    gap: 20px;
+}
+
+.contact-form > h1 {
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 36px;
+}
+
+.form-control {
+    padding: 10px 5px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-primary {
+    width: 125px;
+    height: 38px;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
