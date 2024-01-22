@@ -1,5 +1,5 @@
 function showDeliveryForm() {
-    document.getElementById('delivery-form').style.display = 'block';
+    document.getElementById('updating').style.display = 'block';
 }
 
 function closeDeliveryForm() {

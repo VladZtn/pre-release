@@ -3,9 +3,9 @@ session_start();
 require_once('./service/connect.php');
 require_once('./utilities/addToCart.php');
 
-// if (!isset($_SESSION["user"])) {
-//     header("Location: ./auth/login.php");
-// }
+if (!isset($_SESSION["user"])) {
+    header("Location: ./auth/login.php");
+}
 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['action']) && $_POST['action'] === 'add') {

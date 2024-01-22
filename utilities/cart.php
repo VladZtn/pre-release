@@ -72,16 +72,16 @@ function renderCart() {
         echo "<tbody>";
 
         foreach ($cartItems as $item) { 
-            echo "<tr>";
-            echo "<td>{$item['product_id']}</td>";
-            echo "<td>{$item['product_name']}</td>";
-            echo "<td>£{$item['product_price']}</td>";
-            echo "<td>";
-            echo "<span id='quantity-{$item['product_id']}'>{$item['quantity']}</span>";
-            echo "</td>";
             $itemTotal = $item['product_price'] * $item['quantity'];
-            echo "<td id='total-{$item['product_id']}'>£$itemTotal</td>";
-            echo "<td>";
+            echo "<tr>
+            <td>{$item['product_id']}</td>
+            <td>{$item['product_name']}</td>
+            <td>£{$item['product_price']}</td>
+            <td>
+            <span id='quantity-{$item['product_id']}'>{$item['quantity']}</span>
+            </td>
+            <td id='total-{$item['product_id']}'>£$itemTotal</td>
+            <td>";
 
             // Delete Button
             echo "<div>
@@ -98,17 +98,19 @@ function renderCart() {
             $totalPrice += $itemTotal;
         }
 
-        echo "<tr>";
-        echo "<td colspan='4'><strong>Total:</strong></td>";
-        echo "<td colspan='2' id='cart-total'><strong>£$totalPrice</strong></td>";
-        echo "</tr>";
+        echo "
+        <tr>
+            <td colspan='4'><strong>Total:</strong></td>
+            <td colspan='2' id='cart-total'><strong>£$totalPrice</strong></td>
+        </tr>";
 
         // Checkout Button
-        echo "<tr>";
-        echo "<td id='checkout' colspan='6'>";
-        echo "<button type='button' onclick='showDeliveryForm();'>Checkout</button>";
-        echo "</td>";
-        echo "</tr>";
+        echo "
+        <tr>
+            <td id='checkout' colspan='6'>
+                <button type='button' onclick='showDeliveryForm();'>Checkout</button>
+            </td>
+        </tr>";
 
         echo "
             <div id='delivery-form' class='popup-form'>
